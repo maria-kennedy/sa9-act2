@@ -16,3 +16,11 @@ class TodoList
     end
   end
   
+
+# task = TodoList.new
+# task.add("task1")
+# task.add("task2")
+# task.add("task3")
+# puts task.todos
+# task.remove("task2")
+# puts task.todos
