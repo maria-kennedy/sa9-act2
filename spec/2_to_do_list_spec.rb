@@ -40,9 +40,10 @@ RSpec.describe TodoList do
   describe "#todos" do
     it "returns all todos" do
       task = TodoList.new
-      task.add("a task")*3
-      expect(task.todos).to eq(["a task", "a task", "a task"])
-
+      task.add("a task")
+      task.add("another task")
+      task.add("a third task")
+      expect(task.todos).to eq(["a task", "another task", "a third task"])
     end
   end
   end
